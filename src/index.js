@@ -1,7 +1,7 @@
-import app from './app'
-import './database'
+import app from './app.js'
+import './database.js'
 
-const mongosse = require('mongoose');
+import mongoose from 'mongoose';
 
 app.set("port", process.env.PORT);
 

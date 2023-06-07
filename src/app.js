@@ -1,10 +1,12 @@
 import express from 'express'
 import morgan from 'morgan'
-import { createRoles } from './libs/initialSetup';
-require("dotenv").config();
+import { createRoles } from './libs/initialSetup.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 
-const cors = require('cors');
+
+import cors from 'cors';
 let corsOptions ={
   origin: '*',
 };
